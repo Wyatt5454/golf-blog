@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { RoundsService } from './rounds.service';
-import { RoundsComponent } from './rounds/rounds.component';
-
+import { CommonModule } from '@angular/common';
+import { RoundsService } from '../rounds.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-rounds',
+  templateUrl: 'rounds.component.html',
+  styleUrls: ['./rounds.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'golf-blog';
+export class RoundsComponent implements OnInit {
   rounds: any[] = [];
 
   constructor(private roundService: RoundsService) { }
-  
+
   ngOnInit(): void {
     this.roundService.getRounds().subscribe(
       (response) => {
