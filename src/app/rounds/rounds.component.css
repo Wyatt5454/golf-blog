@@ -1,0 +1,18 @@
+.rounds-container {
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+
+  .round-card {
+    flex: 1 0 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  

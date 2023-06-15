@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoundsComponent } from './rounds/rounds.component';
+import { RoundDetailsComponent } from './round-details/round-details.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { RoundsComponent } from './rounds/rounds.component';
   declarations: [
     AppComponent,
     RoundsComponent,
+    RoundDetailsComponent,
   ],
   imports: [
     BrowserModule,

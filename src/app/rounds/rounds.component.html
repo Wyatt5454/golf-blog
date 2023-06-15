@@ -1,10 +1,9 @@
-<ul>
-    <p>BLAH</p>
-    <li *ngFor="let round of rounds">
-        <p>BLAH</p>
-        <h2>{{ round.player }}</h2>
-        <p>Location: {{ round.tee_played }}</p>
-        <p>Date: {{ round.play_date }}</p>
-        <p>Score: {{ round.notes }}</p>
-    </li>
-  </ul>
+<div class="rounds-container">
+    <div class="round-card" *ngFor="let round of rounds">
+      <h2>{{ round.course }}</h2>
+      <p>Tees: {{ round.tee_played }}</p>
+      <p>Score: {{ round.score }}</p>
+      <a [routerLink]="['/round', round.id]">View Details</a>
+    </div>
+</div>
+  
