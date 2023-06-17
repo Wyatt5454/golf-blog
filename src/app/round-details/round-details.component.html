@@ -1,3 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Golf Scorecard</title>
+        <link rel="stylesheet" type="text/css" href="round-details.component.css">
+      </head>
+<body>
+  <h1>Golf Course Name</h1>
 
-
-<p>round-details works!</p>
+  <table>
+    <tr>
+      <th>Hole</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>OUT</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>15</th>
+      <th>16</th>
+      <th>17</th>
+      <th>18</th>
+      <th>IN</th>
+      <th>TOT</th>
+      <th>HCP</th>
+      <th>NET</th>
+    </tr>
+    <tr class="blue-row">
+      <td>BLUE</td>
+      <td>{{ roundData[0].yardage }}</td>
+      <td>{{ roundData[1].yardage }}</td>
+      <td>{{ roundData[2].yardage }}</td>
+      <td>{{ roundData[3].yardage }}</td>
+      <td>{{ roundData[4].yardage }}</td>
+      <td>{{ roundData[5].yardage }}</td>
+      <td>{{ roundData[6].yardage }}</td>
+      <td>{{ roundData[7].yardage }}</td>
+      <td>{{ roundData[8].yardage }}</td>
+      <td></td>
+      <td>{{ roundData[9].yardage }}</td>
+      <td>{{ roundData[10].yardage }}</td>
+      <td>{{ roundData[11].yardage }}</td>
+      <td>{{ roundData[12].yardage }}</td>
+      <td>{{ roundData[13].yardage }}</td>
+      <td>{{ roundData[14].yardage }}</td>
+      <td>{{ roundData[15].yardage }}</td>
+      <td>{{ roundData[16].yardage }}</td>
+      <td>{{ roundData[17].yardage }}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="green-row">
+      <td>PAR</td>
+      <td>{{ roundData[0].par}}</td>
+      <td>{{ roundData[1].par}}</td>
+      <td>{{ roundData[2].par}}</td>
+      <td>{{ roundData[3].par}}</td>
+      <td>{{ roundData[4].par}}</td>
+      <td>{{ roundData[5].par}}</td>
+      <td>{{ roundData[6].par}}</td>
+      <td>{{ roundData[7].par}}</td>
+      <td>{{ roundData[8].par}}</td>
+      <td></td>
+      <td>{{ roundData[9].par}}</td>
+      <td>{{ roundData[10].par}}</td>
+      <td>{{ roundData[11].par}}</td>
+      <td>{{ roundData[12].par}}</td>
+      <td>{{ roundData[13].par}}</td>
+      <td>{{ roundData[14].par}}</td>
+      <td>{{ roundData[15].par}}</td>
+      <td>{{ roundData[16].par}}</td>
+      <td>{{ roundData[17].par}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="grey-row">
+      <td>HDCP</td>
+      <td>{{ roundData[0].par}}</td>
+      <td>{{ roundData[1].par}}</td>
+      <td>{{ roundData[2].par}}</td>
+      <td>{{ roundData[3].par}}</td>
+      <td>{{ roundData[4].par}}</td>
+      <td>{{ roundData[5].par}}</td>
+      <td>{{ roundData[6].par}}</td>
+      <td>{{ roundData[7].par}}</td>
+      <td>{{ roundData[8].par}}</td>
+      <td></td>
+      <td>{{ roundData[9].par}}</td>
+      <td>{{ roundData[10].par}}</td>
+      <td>{{ roundData[11].par}}</td>
+      <td>{{ roundData[12].par}}</td>
+      <td>{{ roundData[13].par}}</td>
+      <td>{{ roundData[14].par}}</td>
+      <td>{{ roundData[15].par}}</td>
+      <td>{{ roundData[16].par}}</td>
+      <td>{{ roundData[17].par}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Player placeholder</td>
+      <td>{{ roundData[0].score}}</td>
+      <td>{{ roundData[1].score}}</td>
+      <td>{{ roundData[2].score}}</td>
+      <td>{{ roundData[3].score}}</td>
+      <td>{{ roundData[4].score}}</td>
+      <td>{{ roundData[5].score}}</td>
+      <td>{{ roundData[6].score}}</td>
+      <td>{{ roundData[7].score}}</td>
+      <td>{{ roundData[8].score}}</td>
+      <td></td>
+      <td>{{ roundData[9].score}}</td>
+      <td>{{ roundData[10].score}}</td>
+      <td>{{ roundData[11].score}}</td>
+      <td>{{ roundData[12].score}}</td>
+      <td>{{ roundData[13].score}}</td>
+      <td>{{ roundData[14].score}}</td>
+      <td>{{ roundData[15].score}}</td>
+      <td>{{ roundData[16].score}}</td>
+      <td>{{ roundData[17].score}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
