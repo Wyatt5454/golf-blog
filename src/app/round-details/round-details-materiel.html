@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Golf Scorecard</title>
+  <link rel="stylesheet" type="text/css" href="round-details.component.css">
+</head>
+<body>
+  <h1>Golf Course Name</h1>
+
+  <table mat-table>
+    <ng-container matColumnDef="hole">
+      <th mat-header-cell *matHeaderCellDef>Hole</th>
+      <td mat-cell *matCellDef="let data">{{ roundData[0].number }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="out">
+      <th mat-header-cell *matHeaderCellDef>OUT</th>
+      <td mat-cell *matCellDef="let data">{{ data.out }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="in">
+      <th mat-header-cell *matHeaderCellDef>IN</th>
+      <td mat-cell *matCellDef="let data">{{ data.in }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="total">
+      <th mat-header-cell *matHeaderCellDef>TOT</th>
+      <td mat-cell *matCellDef="let data">{{ data.total }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['hole', 'out', 'in', 'total']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['hole', 'out', 'in', 'total']"></tr>
+  </table>
+</body>
+</html>

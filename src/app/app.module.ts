@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoundsComponent } from './rounds/rounds.component';
 import { RoundDetailsComponent } from './round-details/round-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { } from '@angular/material'
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { RoundDetailsComponent } from './round-details/round-details.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
