@@ -1,19 +1,19 @@
-import { Directive, NgModule, OnInit } from "@angular/core";
+import { NgModule, OnInit } from "@angular/core";
 
 @NgModule({})
 export class FunctionalComponent implements OnInit {
   title = "example";
   rounds: any[] = [];
 
-  isLoading = true;
+  isLoading: boolean | null = null;
 
   ngOnInit(): void {
-    // this.isLoading;
-    // console.log("Ending loading timer");
-    // setTimeout(() => {
-    //   console.log("Ending loading timer");
-    //   this.isLoading = false;
-    // }, 5000);
+    this.isLoading = true;
+    console.log("Ending loading timer");
+    setTimeout(() => {
+      console.log("Ending loading timer");
+      this.isLoading = false;
+    }, 5000);
   }
 
   createLoadingSpinner = (): JSX.Element => {
